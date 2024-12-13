@@ -9,9 +9,6 @@ try:
     except:
         raise Exception("Wrong input")
     
-    if number < 0:
-        raise ValueError("Cannot calculate square root of a negative number.")
-    
     result = math.sqrt(number)
     
     with open('output.txt', 'w') as f:
