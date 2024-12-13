@@ -10,9 +10,6 @@ try:
         raise Exception("Wrong input")
     B = random.randint(-10, 10)
     
-    if B == 0:
-        raise ZeroDivisionError("Attempted to divide by zero.")
-    
     result = A / B
     print(result)
 except ZeroDivisionError as e:
